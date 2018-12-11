@@ -27,7 +27,7 @@ namespace Rabble.EventBus.RabbitMQ
         /// <summary>
         /// 交换机的名称
         /// </summary>
-        private readonly string BROKER_NAME = "sodao_shop_event_bus";
+        private readonly string BROKER_NAME = "ha_rabble_shop_event_bus";
         /// <summary>
         /// 序列化的配置
         /// </summary>

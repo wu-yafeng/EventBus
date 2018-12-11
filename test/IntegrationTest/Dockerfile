@@ -4,8 +4,8 @@ WORKDIR /app
 FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /src
 COPY test/IntegrationTest/IntegrationTest.csproj test/IntegrationTest/
-COPY src/Sodao.EventBus.RabbitMQ/Sodao.EventBus.RabbitMQ.csproj src/Sodao.EventBus.RabbitMQ/
-COPY src/Sodao.EventBus.Abstractions/Sodao.EventBus.Abstractions.csproj src/Sodao.EventBus.Abstractions/
+COPY src/Rabble.EventBus.RabbitMQ/Rabble.EventBus.RabbitMQ.csproj src/Rabble.EventBus.RabbitMQ/
+COPY src/Rabble.EventBus.Abstractions/Rabble.EventBus.Abstractions.csproj src/Rabble.EventBus.Abstractions/
 RUN dotnet restore test/IntegrationTest/IntegrationTest.csproj
 COPY . .
 WORKDIR /src/test/IntegrationTest

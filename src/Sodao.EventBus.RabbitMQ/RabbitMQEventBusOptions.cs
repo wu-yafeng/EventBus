@@ -54,8 +54,8 @@ namespace Rabble.EventBus.RabbitMQ
         /// </summary>
         public int Port { get; set; } = 5672;
         /// <summary>
-        /// 交换机名称 default is 'sodao_shop_event_bus'
+        /// 交换机名称 default is 'Rabble_shop_event_bus'
         /// </summary>
-        public string BrokerName { get; set; } = "sodao_shop_event_bus";
+        public string BrokerName { get; set; } = "ha_rabble_event_bus";
     }
 }
