@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <Configurations>Debug;Release;NETCORE2</Configurations>
+    <Authors>Sodao</Authors>
+    <Company>浙江搜道网络技术有限公司</Company>
+    <Description>公共的事件总线抽象项目</Description>
+    <Copyright>Copyright © Sodao Corporation</Copyright>
+    <RepositoryUrl>http://http://10.0.150.1/</RepositoryUrl>
+    <PackageTags>eventbus</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <Product>Sodao.EventBus.Abstractions</Product>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.0\Sodao.EventBus.Abstractions.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.0\Sodao.EventBus.Abstractions.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+﻿using Microsoft.Extensions.DependencyInjection.Extensions;
+using Sodao.EventBus.Abstractions;
+using Sodao.EventBus.InMemory;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Microsoft.Extensions.DependencyInjection
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public static class InMemoryEventBusServiceCollectionExtensions
+    {
+        /// <summary>
+        /// 添加RabbitMQ实现的事件总线
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="configure"></param>
+        /// <returns></returns>
+        public static IServiceCollection AddInMemoryEventBus(this IServiceCollection services)
+        {
+
+            services.TryAddSingleton<IEventBus>(sp =>
+            {
+                return new InMemoryEventBus(sp.CreateScope().ServiceProvider);
+            });
+            return services;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  integrationtest:
+    image: ${DOCKER_REGISTRY}integrationtest
+    build:
+      context: .
+      dockerfile: test/IntegrationTest/Dockerfile
+  
+  eventbus:
+    image: rabbitmq:3-management-alpine

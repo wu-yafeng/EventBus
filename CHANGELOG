@@ -1,0 +1,7 @@
+2.0.1
+
+Add retry period when handler occur errors.
+
+2.0.0
+
+fix bug:Consumer was started before handler registry.event will be losed.
