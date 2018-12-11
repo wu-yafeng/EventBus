@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Sodao.EventBus.Abstractions
+namespace Rabble.EventBus.Abstractions
 {
     /// <summary>
     /// 用于承载发布事件、订阅事件和分发事件到订阅者的事件总线

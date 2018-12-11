@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Sodao.EventBus.Abstractions;
+using Rabble.EventBus.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Sodao.EventBus.InMemory
+namespace Rabble.EventBus.InMemory
 {
     internal class EventBusObserver<T> : IObserver<T>
         where T : IntegrationEvent

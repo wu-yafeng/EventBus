@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection.Extensions;
-using Sodao.EventBus.Abstractions;
-using Sodao.EventBus.InMemory;
+using Rabble.EventBus.Abstractions;
+using Rabble.EventBus.InMemory;
 using System;
 using System.Collections.Generic;
 using System.Text;

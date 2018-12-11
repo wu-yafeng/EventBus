@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2046
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28315.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7688754A-1AB6-4CD7-87FF-B0485CE3C506}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sodao.EventBus.RabbitMQ", "src\Sodao.EventBus.RabbitMQ\Sodao.EventBus.RabbitMQ.csproj", "{1E0B1565-6C45-4BF6-97B8-4B7333690DD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rabble.EventBus.RabbitMQ", "src\Sodao.EventBus.RabbitMQ\Rabble.EventBus.RabbitMQ.csproj", "{1E0B1565-6C45-4BF6-97B8-4B7333690DD3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sodao.EventBus.Abstractions", "src\Sodao.EventBus.Abstractions\Sodao.EventBus.Abstractions.csproj", "{413C754D-C44F-4B9D-A49B-87E00367B922}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rabble.EventBus.Abstractions", "src\Sodao.EventBus.Abstractions\Rabble.EventBus.Abstractions.csproj", "{413C754D-C44F-4B9D-A49B-87E00367B922}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D4207F03-405D-4879-8F21-5E67FBF4255B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sodao.EventBus.InMemory", "src\Sodao.EventBus.InMemory\Sodao.EventBus.InMemory.csproj", "{7BB745A8-7051-478D-8F18-1C7E80C97A60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rabble.EventBus.InMemory", "src\Sodao.EventBus.InMemory\Rabble.EventBus.InMemory.csproj", "{7BB745A8-7051-478D-8F18-1C7E80C97A60}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationTest", "test\IntegrationTest\IntegrationTest.csproj", "{12D08EC9-4980-4D25-942F-F8BAA037AF08}"
 EndProject

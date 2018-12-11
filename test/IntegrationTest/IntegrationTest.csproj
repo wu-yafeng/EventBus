@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Sodao.EventBus.RabbitMQ\Sodao.EventBus.RabbitMQ.csproj" />
+    <ProjectReference Include="..\..\src\Sodao.EventBus.RabbitMQ\Rabble.EventBus.RabbitMQ.csproj" />
   </ItemGroup>
 
 </Project>

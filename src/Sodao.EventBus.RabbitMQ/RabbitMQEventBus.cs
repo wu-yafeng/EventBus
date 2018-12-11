@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using RabbitMQ.Client.Exceptions;
-using Sodao.EventBus.Abstractions;
+using Rabble.EventBus.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -15,7 +15,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Sodao.EventBus.RabbitMQ
+namespace Rabble.EventBus.RabbitMQ
 {
     /// <summary>
     ///  默认的具有重试机制和重连机制的 RabbitMQ 客户端的持久化连接

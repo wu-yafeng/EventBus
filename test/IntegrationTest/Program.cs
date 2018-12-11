@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Sodao.EventBus.Abstractions;
-using Sodao.EventBus.RabbitMQ;
+using Rabble.EventBus.Abstractions;
+using Rabble.EventBus.RabbitMQ;
 using System;
 using System.Threading;
 using System.Threading.Tasks;

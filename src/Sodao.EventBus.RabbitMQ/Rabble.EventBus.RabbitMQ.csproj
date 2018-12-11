@@ -3,18 +3,18 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <Configurations>Debug;Release;NETCORE2</Configurations>
-    <Description>Sodao事件总线组件，用于提供简化的发布和订阅消息的sdk，并支持遥测和诊断</Description>
+    <Description>事件总线组件，用于提供简化的发布和订阅消息的sdk，并支持遥测和诊断</Description>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>http://10.0.150.1/infrastructures/infrastructures.git</RepositoryUrl>
-    <Copyright>Copyright © Sodao Corporation</Copyright>
-    <Authors>Sodao</Authors>
-    <Company>杭州搜道网</Company>
-    <Product>搜道 .NETCORE 事件总线扩展</Product>
+    <Copyright></Copyright>
+    <Authors>WuYafeng</Authors>
+    <Company></Company>
+    <Product>.NETCORE 事件总线扩展</Product>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageTags>eventbus;netcore</PackageTags>
     <NeutralLanguage>zh-CHS</NeutralLanguage>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <Version>2.0.1</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Version>1.0.0</Version>
     <PackageReleaseNotes>拒绝消息后一秒钟后再重试
 支持消息拒绝机制，当消费者抛出异常时，拒绝消息</PackageReleaseNotes>
   </PropertyGroup>
@@ -33,9 +33,9 @@
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="RabbitMQ.Client" Version="5.0.1" />
   </ItemGroup>
-
+  
   <ItemGroup>
-    <ProjectReference Include="..\Sodao.EventBus.Abstractions\Sodao.EventBus.Abstractions.csproj" />
+    <ProjectReference Include="..\Sodao.EventBus.Abstractions\Rabble.EventBus.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

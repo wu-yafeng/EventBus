@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Sodao.EventBus.RabbitMQ
+namespace Rabble.EventBus.RabbitMQ
 {
     /// <summary>
     /// 消息队列未初始化异常

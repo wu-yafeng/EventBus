@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace Sodao.EventBus.Abstractions
+namespace Rabble.EventBus.Abstractions
 {
     /// <summary>
     /// 表示处理指定 <see cref="IEventBus"/> 所分发的特定事件的处理程序和消费者

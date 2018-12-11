@@ -1,11 +1,11 @@
 ﻿using RabbitMQ.Client.Events;
-using Sodao.EventBus.Abstractions;
+using Rabble.EventBus.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
-namespace Sodao.EventBus.RabbitMQ
+namespace Rabble.EventBus.RabbitMQ
 {
     /// <summary>
     /// 遥测扩展

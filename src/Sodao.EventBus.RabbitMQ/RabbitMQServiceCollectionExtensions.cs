@@ -2,8 +2,8 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using RabbitMQ.Client;
-using Sodao.EventBus.Abstractions;
-using Sodao.EventBus.RabbitMQ;
+using Rabble.EventBus.Abstractions;
+using Rabble.EventBus.RabbitMQ;
 using System;
 using System.Diagnostics;
 using System.Linq;

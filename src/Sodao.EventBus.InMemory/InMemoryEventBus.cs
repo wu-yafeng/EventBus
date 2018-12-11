@@ -1,4 +1,4 @@
-﻿using Sodao.EventBus.Abstractions;
+﻿using Rabble.EventBus.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Sodao.EventBus.InMemory
+namespace Rabble.EventBus.InMemory
 {
     public class InMemoryEventBus : IEventBus
     {

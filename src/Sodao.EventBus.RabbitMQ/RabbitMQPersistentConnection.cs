@@ -8,7 +8,7 @@ using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using RabbitMQ.Client.Exceptions;
 
-namespace Sodao.EventBus.RabbitMQ
+namespace Rabble.EventBus.RabbitMQ
 {
     /// <summary>
     /// 默认的具有重试机制和重连机制的 RabbitMQ 客户端的持久化连接

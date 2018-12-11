@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Sodao.EventBus.RabbitMQ
+namespace Rabble.EventBus.RabbitMQ
 {
     /// <summary>
     /// RabbitMQ 事件总线的配置

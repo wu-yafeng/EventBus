@@ -1,9 +1,9 @@
-﻿using Sodao.EventBus.Abstractions;
+﻿using Rabble.EventBus.Abstractions;
 using System;
 using System.Linq;
 using System.Reflection;
 
-namespace Sodao.EventBus.RabbitMQ
+namespace Rabble.EventBus.RabbitMQ
 {
     /// <summary>
     /// 消息队列扩展

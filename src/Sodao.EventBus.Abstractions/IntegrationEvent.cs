@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Sodao.EventBus.Abstractions
+namespace Rabble.EventBus.Abstractions
 {
     /// <summary>
     /// 表示一个可订阅的事件数据对象
