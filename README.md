@@ -2,7 +2,15 @@
 
 A library make you publish and subscribe event easier in ditributed microservice,serverless or any architecture.
 
-## How to use in ASP NET Core
+## Installing EventBus
+
+``` cmd
+
+Install-Package Rabble.EventBus.RabbitMQ
+
+```
+
+## Usage
 
 ``` csharp
 
