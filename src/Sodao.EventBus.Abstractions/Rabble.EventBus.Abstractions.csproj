@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
@@ -7,7 +7,7 @@
     <Company></Company>
     <Description>公共的事件总线抽象项目</Description>
     <Copyright></Copyright>
-    <RepositoryUrl>http://http://10.0.150.1/</RepositoryUrl>
+    <RepositoryUrl>https://github.com/1015450578/EventBus</RepositoryUrl>
     <PackageTags>eventbus</PackageTags>
     <RepositoryType>git</RepositoryType>
     <Product>Sodao.EventBus.Abstractions</Product>
