@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <Version>1.0.0</Version>
     <Description>基于内存实现的事件总线，可用于你的集成测试项目</Description>
     <Authors>WuYafeng</Authors>
@@ -14,6 +14,7 @@
     <PackageProjectUrl>https://github.com/1015450578/EventBus</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>eventbus;inmemory</PackageTags>
+    <DocumentationFile>$(OutputPath)\Rabble.EventBus.InMemory.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

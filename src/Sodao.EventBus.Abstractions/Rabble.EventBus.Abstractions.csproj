@@ -14,14 +14,7 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://github.com/1015450578/EventBus/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/1015450578/EventBus</PackageProjectUrl>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard1.0\Sodao.EventBus.Abstractions.xml</DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard1.0\Sodao.EventBus.Abstractions.xml</DocumentationFile>
+    <DocumentationFile>$(OutputPath)\Sodao.EventBus.Abstractions.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
