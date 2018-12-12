@@ -6,9 +6,14 @@
     <Description>基于内存实现的事件总线，可用于你的集成测试项目</Description>
     <Authors>WuYafeng</Authors>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <PackageIconUrl>https://github.com/1015450578/EventBus</PackageIconUrl>
-    <RepositoryUrl>git</RepositoryUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <RepositoryUrl>https://github.com/1015450578/EventBus</RepositoryUrl>
     <NeutralLanguage>zh-CN</NeutralLanguage>
+    <Copyright />
+    <PackageLicenseUrl>https://github.com/1015450578/EventBus/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/1015450578/EventBus</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>eventbus;inmemory</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

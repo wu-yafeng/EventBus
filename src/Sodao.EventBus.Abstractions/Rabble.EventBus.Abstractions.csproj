@@ -11,6 +11,9 @@
     <PackageTags>eventbus</PackageTags>
     <RepositoryType>git</RepositoryType>
     <Product>Sodao.EventBus.Abstractions</Product>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/1015450578/EventBus/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/1015450578/EventBus</PackageProjectUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
