@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Rabble.EventBus.Abstractions\Rabble.EventBus.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\Rabble.EventBus.RabbitMQ\Rabble.EventBus.RabbitMQ.csproj" />
   </ItemGroup>
 
 </Project>

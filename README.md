@@ -1,4 +1,6 @@
-# EventBus
+# Rabble EventBus
+
+![logo](logo.png)
 
 A library make you publish and subscribe event easier in ditributed microservice,serverless or any architecture.
 
