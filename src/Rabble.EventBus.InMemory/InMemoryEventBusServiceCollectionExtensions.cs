@@ -16,7 +16,6 @@ namespace Microsoft.Extensions.DependencyInjection
         /// 添加RabbitMQ实现的事件总线
         /// </summary>
         /// <param name="services"></param>
-        /// <param name="configure"></param>
         /// <returns></returns>
         public static IServiceCollection AddInMemoryEventBus(this IServiceCollection services)
         {

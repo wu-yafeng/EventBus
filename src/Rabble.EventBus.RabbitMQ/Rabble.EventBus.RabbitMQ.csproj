@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard.0</TargetFramework>
-    <Configurations>Debug;Release;NETCORE2</Configurations>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Configurations>Debug;Release;</Configurations>
     <Description>事件总线组件，用于提供简化的发布和订阅消息的sdk，并支持遥测和诊断</Description>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/1015450578/EventBus</RepositoryUrl>
@@ -26,10 +26,11 @@
     <PackageReference Include="Microsoft.Extensions.Options" Version="2.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="RabbitMQ.Client" Version="5.0.1" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="4.5.1" />
   </ItemGroup>
-  
+
   <ItemGroup>
-    <ProjectReference Include="..\Sodao.EventBus.Abstractions\Rabble.EventBus.Abstractions.csproj" />
+    <ProjectReference Include="..\Rabble.EventBus.Abstractions\Rabble.EventBus.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

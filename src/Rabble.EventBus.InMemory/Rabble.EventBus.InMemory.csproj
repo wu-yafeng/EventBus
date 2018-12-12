@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sodao.EventBus.Abstractions\Rabble.EventBus.Abstractions.csproj" />
+    <ProjectReference Include="..\Rabble.EventBus.Abstractions\Rabble.EventBus.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>
