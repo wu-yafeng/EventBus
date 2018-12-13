@@ -43,7 +43,7 @@ namespace UnitTests.RabbitMQ
                 .Verifiable();
 
             _optionMock.SetupGet(x => x.Value)
-                .Returns(CreateOptions())
+                .Returns(RabbitMQOptionsProvider.CreateOptions())
                 .Verifiable();
             _connectionMock.Setup(x => x.TryConnect())
                 .Returns(true)
@@ -72,13 +72,6 @@ namespace UnitTests.RabbitMQ
             Assert.NotNull(eventBus);
         }
 
-
-
-        private RabbitMQEventBusOptions CreateOptions() => new RabbitMQEventBusOptions()
-        {
-            BrokerName = "XUNIT_BROKER",
-            QueueName = "XUNIT_APP_QUEUE"
-        };
 
         public void Dispose() => _repository.VerifyAll();
     }

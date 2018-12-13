@@ -2,6 +2,6 @@ language: csharp
 mono: none
 dotnet: 2.2
 script:
-  - dotnet restore src/Rabble.EventBus.Abstractions
-  - dotnet restore src/Rabble.EventBus.RabbitMQ
-  - dotnet restore src/Rabble.EventBus.InMemory
+  - dotnet restore
+  - dotnet build
+  - dotnet test test/UnitTests/UnitTests.csproj
