@@ -1,7 +1,7 @@
 language: csharp
 mono: none
-dotnet: 2.1
+dotnet: 2.2
 script:
-  - dotnet restore Rabble.EventBus.Abstractions
-  - dotnet restore Rabble.EventBus.RabbitMQ
-  - dotnet restore Rabble.EventBus.InMemory
+  - dotnet restore src/Rabble.EventBus.Abstractions
+  - dotnet restore src/Rabble.EventBus.RabbitMQ
+  - dotnet restore src/Rabble.EventBus.InMemory

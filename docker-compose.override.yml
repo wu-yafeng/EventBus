@@ -1,7 +1,0 @@
-version: '3.4'
-services:
-  integrationtest:
-    environment:
-      - EBS_HOST=eventbus
-  eventbus:
-    image: rabbitmq:3-management-alpine
