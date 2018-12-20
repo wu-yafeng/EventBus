@@ -14,6 +14,8 @@ Install-Package Rabble.EventBus.RabbitMQ
 
 ## Usage
 
+### ASP.NET Core
+
 ``` csharp
 
 public void Configure(IServiceCollection services)
@@ -30,5 +32,18 @@ public void Configure(IApplicationBuilder app,IEventBus ebs)
 {
     ebs.Subscribe<MyIntegrationEvent,MyIntegrationEventHandler>();
 }
+
+```
+
+### ASP.NET or .NET Framework
+
+``` csharp
+
+EventbusFactory.Initialize(opt=>{
+		opt.Host = "ha-proxy-host-for connect RabbitMQ";
+        opt.QueueName = "Current Application Name";
+});
+
+EventbusFactory.GetRequiredService<IEventBus>();
 
 ```

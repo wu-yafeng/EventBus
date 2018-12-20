@@ -135,7 +135,7 @@ namespace Rabble.EventBus.RabbitMQ
                     }
                     catch (Exception ex)
                     {
-                        _logger.LogCritical(ex, "FALTAL ERROR:A exception was occur during Rabbit Client publish message..");
+                        _logger.LogCritical(0, ex, "FALTAL ERROR:A exception was occur during Rabbit Client publish message..");
                         _diagnosticSource.PublishFail(@event, ex);
                         throw ex;
                     }
@@ -154,10 +154,7 @@ namespace Rabble.EventBus.RabbitMQ
         }
 
         /// <inheritdoc />
-        Task IEventBus.PublishAsync<TEvent>(TEvent @event, CancellationToken cancellationToken)
-        {
-            return Task.Run(() => Publish(@event), cancellationToken);
-        }
+        Task IEventBus.PublishAsync<TEvent>(TEvent @event, CancellationToken cancellationToken) => Task.Run(() => Publish(@event), cancellationToken);
 
         /// <inheritdoc />
         void IEventBus.Subscribe<TEvent, TEventHandler>()
@@ -244,9 +241,9 @@ namespace Rabble.EventBus.RabbitMQ
             {
                 await ProcessEventAsync(eventName, message);
             }
-            catch(RabbitMQEventBusUnInitializedException error)
+            catch (RabbitMQEventBusUnInitializedException error)
             {
-                _logger.LogWarning(error,"will retry 1 seconds later");
+                _logger.LogWarning(0, error, "will retry 1 seconds later");
 
                 // 等待一秒钟后拒绝事件，进行重试
                 await Task.Delay(1000);
@@ -256,7 +253,7 @@ namespace Rabble.EventBus.RabbitMQ
             }
             catch (Exception error)
             {
-                _logger.LogError(error, "A error was occur during handing event,please check the consumer state");
+                _logger.LogError(0, error, "A error was occur during handing event,please check the consumer state");
 
                 await Task.Delay(1000);
 

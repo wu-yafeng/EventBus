@@ -56,5 +56,10 @@ namespace Microsoft.Extensions.DependencyInjection
             }
             return services;
         }
+
+#if NET451
+        internal static IServiceScope CreateScope(this IServiceProvider provider)
+            => provider.GetRequiredService<IServiceScopeFactory>().CreateScope();
+#endif
     }
 }
