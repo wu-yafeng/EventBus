@@ -28,7 +28,7 @@ namespace Rabble.EventBus.RabbitMQ
         /// <summary>
         /// 发布事件失败，出现了其他异常
         /// </summary>
-        public const string PUBLISH_Fail = "Rabble.EventBus.RabbitMQ.PublishEvent.Fail";
+        public const string PUBLISH_FAIL = "Rabble.EventBus.RabbitMQ.PublishEvent.Fail";
         /// <summary>
         /// 开始接受到事件消息
         /// </summary>

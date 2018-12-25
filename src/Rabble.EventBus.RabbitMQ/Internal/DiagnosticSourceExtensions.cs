@@ -57,9 +57,9 @@ namespace Rabble.EventBus.RabbitMQ
                 throw new ArgumentNullException(nameof(diagnosticSource));
             }
 
-            if (diagnosticSource.IsEnabled(RabbitMQEventBusDiagnosticEventConstant.PUBLISH_Fail))
+            if (diagnosticSource.IsEnabled(RabbitMQEventBusDiagnosticEventConstant.PUBLISH_FAIL))
             {
-                diagnosticSource.Write(RabbitMQEventBusDiagnosticEventConstant.PUBLISH_Fail, new { @event, exception });
+                diagnosticSource.Write(RabbitMQEventBusDiagnosticEventConstant.PUBLISH_FAIL, new { @event, exception });
             }
         }
         public static void PublishRetryFailed(this DiagnosticSource diagnosticSource, IntegrationEvent @event)
