@@ -110,14 +110,14 @@ namespace Rabble.EventBus.RabbitMQ
                 {
                     try
                     {
-                        _diagnosticSource.BeforePublushEvent(@event);
+                        _diagnosticSource.BeforePublishEvent(@event);
 
                         channel.BasicPublish(exchange: BROKER_NAME,
                             routingKey: eventName,
                             basicProperties: null,
                             body: body);
 
-                        _diagnosticSource.AfterPublushEvent(@event);
+                        _diagnosticSource.AfterPublishEvent(@event);
                         success = true;
                         break;
                     }
