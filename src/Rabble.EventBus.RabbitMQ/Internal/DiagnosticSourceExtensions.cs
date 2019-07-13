@@ -12,7 +12,7 @@ namespace Rabble.EventBus.RabbitMQ
     /// </summary>
     internal static class DiagnosticSourceExtensions
     {
-        public static void BeforePublushEvent(this DiagnosticSource diagnosticSource, IntegrationEvent @event)
+        public static void BeforePublishEvent(this DiagnosticSource diagnosticSource, IntegrationEvent @event)
         {
             if (diagnosticSource == null)
             {
@@ -24,7 +24,7 @@ namespace Rabble.EventBus.RabbitMQ
                 diagnosticSource.Write(RabbitMQEventBusDiagnosticEventConstant.BEFORE_PUBLISH, new { @event });
             }
         }
-        public static void AfterPublushEvent(this DiagnosticSource diagnosticSource, IntegrationEvent @event)
+        public static void AfterPublishEvent(this DiagnosticSource diagnosticSource, IntegrationEvent @event)
         {
             if (diagnosticSource == null)
             {
